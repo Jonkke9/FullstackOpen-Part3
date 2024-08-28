@@ -23,6 +23,25 @@ let persons = [
     id: "4",
   },
 ];
+app.get("/info", (request, response) => {
+  const htmlContent = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Info Page</title>
+      </head>
+      <body>
+        <div>
+          Phonebook has info for ${persons.length} people
+        </div>
+        <div>
+          ${new Date()}
+        </div>
+      </body>
+    </html>
+  `;
+  response.send(htmlContent);
+});
 
 app.get("/api/persons", (request, response) => {
   response.json(persons);
