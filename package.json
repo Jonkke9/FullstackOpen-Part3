@@ -1,0 +1,11 @@
+{
+  "name": "fullstackopen-part3",
+  "version": "1.0.0",
+  "description": "My submissions for FSO's part 3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "jonkke9",
+  "license": "ISC"
+}
