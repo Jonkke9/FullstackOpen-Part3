@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(coras());
+app.use(cors());
 
 morgan.token("body", (req) => JSON.stringify(req.body));
 app.use(
@@ -73,7 +73,6 @@ app.get("/api/persons/:id", (request, response) => {
 });
 
 app.delete("/api/persons/:id", (request, response) => {
-  console.log();
   const id = request.params.id;
   persons = persons.filter((person) => person.id !== id);
 
